@@ -1,7 +1,7 @@
 function resolveApiBaseUrl() {
   const envUrl = import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL;
   if (!envUrl) {
-    return 'http://localhost:8000/api';
+    return 'https://careerwithinu.onrender.com/api';
   }
   const cleaned = envUrl.trim().replace(/\/+$/, '');
   return cleaned.endsWith('/api') ? cleaned : `${cleaned}/api`;
