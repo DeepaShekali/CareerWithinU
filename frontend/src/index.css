@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F9F8FD] text-[#1E1B4B] font-sans;
+  }
+}
+
+/* Custom scrollbars for chat and cards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EEFF;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5C2FE;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9D71F9;
+}
